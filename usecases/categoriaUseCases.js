@@ -47,7 +47,7 @@ const deleteCategoriaDB = async (codigo) => {
             return `Categoria de código ${codigo} removida com sucesso!`;
         }
     } catch (err) {
-        throw "Erro ao remover a categoria: " + err;
+        throw "Erro ao remover a categoria teste git: " + err;
     }
 }
 
