@@ -84,14 +84,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:3002/categoria/4",
+					"raw": "localhost:3002/categoria/11",
 					"host": [
 						"localhost"
 					],
 					"port": "3002",
 					"path": [
 						"categoria",
-						"4"
+						"11"
 					]
 				}
 			},
@@ -111,6 +111,116 @@
 					"path": [
 						"categoria",
 						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"nome\": \"Mouse USB novo\",\n        \"descricao\": \"Mouse USB\",\n        \"quantidade_estoque\": 20,\n        \"ativo\": true,\n        \"valor\": \"60.00\",\n        \"data_cadastro\": \"2024-07-08\",\n        \"categoria\": 1\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"codigo\" : 5,\n        \"nome\": \"Mouse USB alterado\",\n        \"descricao\": \"Mouse USB\",\n        \"quantidade_estoque\": 20,\n        \"ativo\": true,\n        \"valor\": \"60.00\",\n        \"data_cadastro\": \"2024-07-08\",\n        \"categoria\": 1\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produto/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produto",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get produto por código",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produto/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produto",
+						"4"
 					]
 				}
 			},
